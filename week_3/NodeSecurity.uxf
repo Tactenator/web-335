@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>110</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>USER
+--
+firstName
+lastName
+id</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>340</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>ROLE
+--
+name
+roleID</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>570</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>PERMISSIONS
+--
+name
+authorizationLevel
+id</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>220</y>
+      <w>50</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1.*
+has</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>450</y>
+      <w>120</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1.*
+associated with</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>560</x>
+      <y>50</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Node Security
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
