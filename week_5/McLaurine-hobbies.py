@@ -9,7 +9,7 @@ for x in hobbies:
 # Begins the for loop to iterate over the days of the week in the days array
 for day in days: 
     # Checks to see if the day is equal to Sunday or Saturday
-    if day == 'Sunday' or 'Saturday':
+    if day == 'Sunday' or day == 'Saturday':
         #if true, prints a message to go enjoy hobbies
         print('No work today! Go enjoy your hobbies!')
     else:
