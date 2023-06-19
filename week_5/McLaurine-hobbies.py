@@ -1,3 +1,8 @@
+#Trevor McLaurine
+#6/19/2023
+#McLaurine - hobbies.py
+#Web 335 - Assignment 4.3
+
 #Initializing an list of hobbies in an array
 hobbies = ['Biking', 'Cooking', 'Music', 'Gaming', 'Sewing']
 days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -14,4 +19,4 @@ for day in days:
         print('No work today! Go enjoy your hobbies!')
     else:
         #if false, prints a message to say it is a work day.
-        print('No hobbies today. Today is a work day.')
+        print('No hobbies today. Today is a work day...')
