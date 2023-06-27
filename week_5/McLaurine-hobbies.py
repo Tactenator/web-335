@@ -1,7 +1,7 @@
 #Trevor McLaurine
 #6/19/2023
 #McLaurine - hobbies.py
-#Web 335 - Assignment 4.3
+#Web 335 - Assignment 5.3
 
 #Initializing an list of hobbies in an array
 hobbies = ['Biking', 'Cooking', 'Music', 'Gaming', 'Sewing']
