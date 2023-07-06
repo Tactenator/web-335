@@ -6,9 +6,11 @@
 #Importing MongoClient from pymongo
 import pymongo
 import datetime
+
+# Kept receiving error that stated certificate was invalid. Imported this to solve the problem. 
 import certifi
 
-#Connection string to connect to MongoDB
+#Connection string to connect to MongoDB. Certifi fixes certification issues
 client = pymongo.MongoClient("mongodb+srv://web335_user:s3cret@web340db.93lxfky.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
 
 #connect to web335DB
@@ -48,5 +50,5 @@ print(col.find_one({ "email": "mynamebif@superbifboy.com" }))
 # Deletes the user  
 col.delete_one({ "employeeId": "1013"})
 
-# Shows the user deleted
+# Shows the user deleted. Will display 'None'
 print(col.find_one({ "employeeId": "1013" }))
