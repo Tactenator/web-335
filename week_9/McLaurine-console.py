@@ -49,11 +49,22 @@ while(run_app):
     user_input = input("What would you like to do?: ")
     if(user_input == "genre"):
         print("Please choose from fantasy, fiction, science fiction, or historical fiction")
-        input("What Genre would you like to search for?: ")
-        if("fantasy"):
-            print("You chose fantasy")
+        genre_input = input("What Genre would you like to search for?: ")
+        if(genre_input == ""):
+            print("Input is required.")
+        else:
+            print("Searching for " + genre_input + " books")
+            books_found = (db.books.find({ 'genre': genre_input }))
+            for document in books_found:
+                 print("\n ******************************************************* \n")
+                 print("BookID: " + str(document.get('bookId')))
+                 print("Title: " + str(document.get('title')))
+                 print("Genre: " + str(document.get('genre')))
+                 print("Author: " + str(document.get('author')))
+                 print("\n ******************************************************* \n")
     elif(user_input == "wishlist"):
-        input("Please input the customer ID of the wishlist you wish to see: ")
+        customer = input("Please input the customer ID of the wishlist you wish to see: ")
+        db.customers.find({ 'CustomerId': customer })
     elif(user_input == "exit"):
         print("Thank you for using the What-a-book app! Good-bye!")
         run_app = False
